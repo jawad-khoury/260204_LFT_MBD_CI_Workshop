@@ -2,7 +2,7 @@
 ## Makefile generated for component 'dcmtrCtrl_PID_ca'. 
 ## 
 ## Makefile     : dcmtrCtrl_PID_ca.mk
-## Generated on : Tue Jan 06 17:02:43 2026
+## Generated on : Thu Jan 08 10:14:42 2026
 ## Final product: ./dcmtrCtrl_PID_ca.lib
 ## Product type : static library
 ## 
@@ -24,7 +24,7 @@ MAKEFILE                  = dcmtrCtrl_PID_ca.mk
 MATLAB_ROOT               = C:/PROGRA~1/MATLAB/R2025b
 MATLAB_BIN                = C:/PROGRA~1/MATLAB/R2025b/bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)/win64
-START_DIR                 = C:/Users/jkhoury/MATLAB_AE/260204_VVTestingWorkshop/dc-motor-with-pid-control/GeneratedArtifacts/CodeGen
+START_DIR                 = C:/Users/jkhoury/MATLAB_AE/260204_VnV_CI_Workshop/GeneratedArtifacts/CodeGen
 SOLVER                    = 
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 0

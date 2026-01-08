@@ -2,7 +2,7 @@
 ## Makefile generated for component 'dcmtrCtrl_PID'. 
 ## 
 ## Makefile     : dcmtrCtrl_PID.mk
-## Generated on : Tue Jan 06 17:02:45 2026
+## Generated on : Thu Jan 08 10:14:45 2026
 ## Final product: ./dcmtrCtrl_PID.exe
 ## Product type : executable
 ## 
@@ -24,7 +24,7 @@ MAKEFILE                  = dcmtrCtrl_PID.mk
 MATLAB_ROOT               = C:/PROGRA~1/MATLAB/R2025b
 MATLAB_BIN                = C:/PROGRA~1/MATLAB/R2025b/bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)/win64
-START_DIR                 = C:/Users/jkhoury/MATLAB_AE/260204_VVTestingWorkshop/dc-motor-with-pid-control/GeneratedArtifacts/CodeGen
+START_DIR                 = C:/Users/jkhoury/MATLAB_AE/260204_VnV_CI_Workshop/GeneratedArtifacts/CodeGen
 SOLVER                    = 
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 0
@@ -208,7 +208,7 @@ PREBUILT_OBJS =
 ## LIBRARIES
 ###########################################################################
 
-MODELREF_LIBS = C:/Users/jkhoury/MATLAB_AE/260204_VVTestingWorkshop/dc-motor-with-pid-control/GeneratedArtifacts/CodeGen/slprj/ert/dcmtrCtrl_PID/instrumented/dcmtrCtrl_PID_rtwlib.lib
+MODELREF_LIBS = C:/Users/jkhoury/MATLAB_AE/260204_VnV_CI_Workshop/GeneratedArtifacts/CodeGen/slprj/ert/dcmtrCtrl_PID/instrumented/dcmtrCtrl_PID_rtwlib.lib
 
 LIBS = $(START_DIR)/slprj/ert/dcmtrCtrl_PID/coderassumptions/lib/dcmtrCtrl_PID_ca.lib
 
