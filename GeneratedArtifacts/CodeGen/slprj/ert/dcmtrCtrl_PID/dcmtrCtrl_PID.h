@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'dcmtrCtrl_PID'.
  *
- * Model version                  : 9.0
+ * Model version                  : 9.3
  * Simulink Coder version         : 25.2 (R2025b) 28-Jul-2025
- * C/C++ source code generated on : Thu Jan  8 10:14:19 2026
+ * C/C++ source code generated on : Thu Jan  8 14:20:51 2026
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -22,6 +22,7 @@
 
 /* Block signals and states (default storage) for model 'dcmtrCtrl_PID' */
 typedef struct {
+  real32_T UnitDelay_DSTATE;           /* '<Root>/Unit Delay' */
   real32_T Filter_DSTATE;              /* '<S31>/Filter' */
   real32_T Integrator_DSTATE;          /* '<S36>/Integrator' */
 } dcmtrCtrl_PID_DW_f;

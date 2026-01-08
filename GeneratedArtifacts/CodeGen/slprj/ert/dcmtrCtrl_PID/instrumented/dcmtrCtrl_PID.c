@@ -155,14 +155,11 @@ typedef void *pointer_T;
 #endif /* RTWTYPES_H */
 # 21 "C:\\Users\\jkhoury\\MATLAB_AE\\260204_VnV_CI_Workshop\\GeneratedArtifacts\\CodeGen\\slprj\\ert\\dcmtrCtrl_PID\\dcmtrCtrl_PID.h"
 #endif /* dcmtrCtrl_PID_COMMON_INCLUDES_ */
-
-
-
-
-
+# 28
 typedef 
 # 24
 struct { 
+real32_T UnitDelay_DSTATE; 
 real32_T Filter_DSTATE; 
 real32_T Integrator_DSTATE; 
 } dcmtrCtrl_PID_DW_f; 
@@ -170,11 +167,11 @@ real32_T Integrator_DSTATE;
 
 
 typedef 
-# 29
+# 30
 struct { 
 dcmtrCtrl_PID_DW_f rtdw; 
 } dcmtrCtrl_PID_MdlrefDW; 
-# 41
+# 42
 extern real32_T Ctrl_Kd; 
 
 
@@ -188,7 +185,7 @@ extern real32_T Ctrl_N;
 
 
 extern void dcmtrCtrl_PID(const real32_T * rtu_ref, const real32_T * rtu_ang, real32_T * rty_v, dcmtrCtrl_PID_DW_f * localDW); 
-# 125
+# 126
 #endif /* dcmtrCtrl_PID_h_ */
 # 20 "C:\\Users\\jkhoury\\MATLAB_AE\\260204_VnV_CI_Workshop\\GeneratedArtifacts\\CodeGen\\slprj\\ert\\dcmtrCtrl_PID\\dcmtrCtrl_PID.c"
 void dcmtrCtrl_PID(const real32_T *rtu_ref, const real32_T *rtu_ang, real32_T *
@@ -199,20 +196,26 @@ real32_T rtb_Subtract;
 real32_T u0; 
 
 
+*rty_v = localDW->UnitDelay_DSTATE; 
+
+
 rtb_Subtract = *rtu_ref - *rtu_ang; 
-# 35
+# 38
 rtb_FilterCoefficient = (Ctrl_Kd * rtb_Subtract - localDW->Filter_DSTATE) * Ctrl_N; 
-# 42
+# 45
 u0 = (Ctrl_Kp * rtb_Subtract + localDW->Integrator_DSTATE) + rtb_FilterCoefficient; { 
 
 
 
 if (__MW_INSTRUM_NODE_2((__MW_INSTRUM_NODE_4(u0, (5.0F)), (u0 > (5.0F))))) { 
-*rty_v = (5.0F); 
+
+localDW->UnitDelay_DSTATE = (5.0F); 
 } else { { if (__MW_INSTRUM_NODE_6(((__mw_tmp_for_expr_1 = -(5.0F)), (__MW_INSTRUM_NODE_8(u0, __mw_tmp_for_expr_1), (u0 < __mw_tmp_for_expr_1))))) { 
-*rty_v = -(5.0F); 
+
+localDW->UnitDelay_DSTATE = -(5.0F); 
 } else { 
-*rty_v = u0; 
+
+localDW->UnitDelay_DSTATE = u0; 
 }  } }  } 
 
 

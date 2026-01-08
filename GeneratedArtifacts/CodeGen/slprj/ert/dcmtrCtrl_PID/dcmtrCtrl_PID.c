@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'dcmtrCtrl_PID'.
  *
- * Model version                  : 9.0
+ * Model version                  : 9.3
  * Simulink Coder version         : 25.2 (R2025b) 28-Jul-2025
- * C/C++ source code generated on : Thu Jan  8 10:14:19 2026
+ * C/C++ source code generated on : Thu Jan  8 14:20:51 2026
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -23,6 +23,9 @@ void dcmtrCtrl_PID(const real32_T *rtu_ref, const real32_T *rtu_ang, real32_T
   real32_T rtb_FilterCoefficient;
   real32_T rtb_Subtract;
   real32_T u0;
+
+  /* UnitDelay: '<Root>/Unit Delay' */
+  *rty_v = localDW->UnitDelay_DSTATE;
 
   /* Sum: '<Root>/Subtract' */
   rtb_Subtract = (*rtu_ref) - (*rtu_ang);
@@ -44,11 +47,14 @@ void dcmtrCtrl_PID(const real32_T *rtu_ref, const real32_T *rtu_ang, real32_T
 
   /* Saturate: '<S43>/Saturation' */
   if (u0 > 5.0F) {
-    *rty_v = 5.0F;
+    /* Update for UnitDelay: '<Root>/Unit Delay' */
+    localDW->UnitDelay_DSTATE = 5.0F;
   } else if (u0 < -5.0F) {
-    *rty_v = -5.0F;
+    /* Update for UnitDelay: '<Root>/Unit Delay' */
+    localDW->UnitDelay_DSTATE = -5.0F;
   } else {
-    *rty_v = u0;
+    /* Update for UnitDelay: '<Root>/Unit Delay' */
+    localDW->UnitDelay_DSTATE = u0;
   }
 
   /* End of Saturate: '<S43>/Saturation' */
