@@ -143,10 +143,9 @@ jobs:
 
         run:
           >
-          matlab 
-          -nodesktop 
+          matlab-batch 
           -logfile output.log 
-          -batch "openProject(pwd);runprocess(Process = 'CIPipeline', Force = false, ExitInBatchMode = true, RerunFailedTasks = false, RerunErroredTasks = false, GenerateJUnitForProcess = false);" 
+          "openProject(pwd);runprocess(Process = 'CIPipeline', Force = false, ExitInBatchMode = true, RerunFailedTasks = false, RerunErroredTasks = false, GenerateJUnitForProcess = false);" 
 
       - name:
           Upload Artifacts
@@ -222,10 +221,9 @@ jobs:
 
         run:
           >
-          matlab 
-          -nodesktop 
+          matlab-batch 
           -logfile output.log 
-          -batch "openProject(pwd);
+          "openProject(pwd);
           rptObj=padv.ProcessAdvisorReportGenerator(Process = 'CIPipeline', Format='pdf', OutputPath=fullfile(currentProject().RootFolder,'ProcessAdvisorReport'));
           rptObj.generateReport();" 
 
