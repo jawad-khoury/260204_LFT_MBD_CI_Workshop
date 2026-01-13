@@ -80,30 +80,28 @@ jobs:
             derived/artifacts.dmr
 
 
-      - name:
-          Upload Artifacts
-
-        if:
-          ${{ !cancelled() }}
-
-        uses:
-          actions/upload-artifact@v4
-
-        with:
-          name:
-            Restore_Cache_padv_artifacts
-
-          path:
-            |
-            derived/artifacts.dmr
-            PA_Results/dcmtrCtrl_PID/webview
-            PA_Results/dcmtr_testharness/webview
-            PA_Results/test_results
-
-          retention-days:
-            30
-
-
+      # - name:
+      #     Upload Artifacts
+      # 
+      #   if:
+      #     ${{ !cancelled() }}
+      # 
+      #   uses:
+      #     actions/upload-artifact@v4
+      # 
+      #   with:
+      #     name:
+      #       Restore_Cache_padv_artifacts
+      # 
+      #     path:
+      #       |
+      #       derived/artifacts.dmr
+      #       PA_Results/dcmtrCtrl_PID/webview
+      #       PA_Results/dcmtr_testharness/webview
+      #       PA_Results/test_results
+      # 
+      #     retention-days:
+      #       30
 
 
   Runprocess:
