@@ -50,7 +50,7 @@ jobs:
 
   Restore_Cache:
     runs-on:
-      self-hosted
+      ubuntu-latest
 
     steps:
       - name:
@@ -114,7 +114,7 @@ jobs:
       Restore_Cache
 
     runs-on:
-      self-hosted
+      ubuntu-latest
 
     steps:
       - name:
