@@ -1,0 +1,227 @@
+[
+ {
+  "hid":160,
+  "sid":"dcmtr_testharness:9",
+  "rsid":"dcmtr",
+  "esid":"dcmtr_testharness:9",
+  "parent":1,
+  "children":[
+   161
+  ],
+  "name":"DC Motor (dcmtr)",
+  "fullname":"dcmtr_testharness/DC Motor (dcmtr)",
+  "label":"DC Motor (dcmtr)",
+  "className":"Simulink.SubSystem",
+  "icon":"SubsystemReference_16_icon",
+  "svg":"support/slwebview_files/dcmtr_d.svg",
+  "thumbnail":"support/slwebview_files/dcmtr_d.png",
+  "elements":[
+   {
+    "sid":"dcmtr_testharness:9:1",
+    "rsid":"dcmtr:1",
+    "name":"DC Motor",
+    "label":"DC Motor",
+    "className":"Simulink.SimscapeBlock",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:2",
+    "rsid":"dcmtr:2",
+    "name":"Electrical Reference2",
+    "label":"Electrical Reference2",
+    "className":"Simulink.SimscapeBlock",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:3",
+    "rsid":"dcmtr:3",
+    "name":"Mechanical\nRotational Reference",
+    "label":"Mechanical Rotational Reference",
+    "className":"Simulink.SimscapeBlock",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:4",
+    "rsid":"dcmtr:4",
+    "name":"Rotational Friction",
+    "label":"Rotational Friction",
+    "className":"Simulink.SimscapeBlock",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:5",
+    "rsid":"dcmtr:5",
+    "name":"Simscape Solver\nConfig",
+    "label":"Simscape Solver Config",
+    "className":"Solver\nConfiguration",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:6",
+    "rsid":"dcmtr:6",
+    "name":"measurrement",
+    "label":"measurrement",
+    "className":"Simulink.SubSystem",
+    "icon":"SubSystemIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:13",
+    "rsid":"dcmtr:13",
+    "name":"V+",
+    "label":"V+",
+    "className":"Simulink.PMIOPort",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:14",
+    "rsid":"dcmtr:14",
+    "name":"V-",
+    "label":"V-",
+    "className":"Simulink.PMIOPort",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:15",
+    "rsid":"dcmtr:15",
+    "name":"Angle",
+    "label":"Angle",
+    "className":"Simulink.Outport",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:4#lconn:1;line",
+    "rsid":"dcmtr:4#lconn:1;line",
+    "name":"",
+    "label":"",
+    "className":"Simulink.Line",
+    "icon":"LineIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:1#rconn:2;line",
+    "rsid":"dcmtr:1#rconn:2;line",
+    "name":"",
+    "label":"",
+    "className":"Simulink.Line",
+    "icon":"LineIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:2#lconn:1;line",
+    "rsid":"dcmtr:2#lconn:1;line",
+    "name":"",
+    "label":"",
+    "className":"Simulink.Line",
+    "icon":"LineIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:6#out:1;line",
+    "rsid":"dcmtr:6#out:1;line",
+    "name":"",
+    "label":"",
+    "className":"Simulink.Line",
+    "icon":"LineIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:1#lconn:1;line",
+    "rsid":"dcmtr:1#lconn:1;line",
+    "name":"",
+    "label":"",
+    "className":"Simulink.Line",
+    "icon":"LineIcon_icon"
+   }
+  ],
+  "sysViewURL":"support/slwebview_files/dcmtr_d.json",
+  "sameAsElement":false
+ },
+ {
+  "hid":161,
+  "sid":"dcmtr_testharness:9:6",
+  "rsid":"dcmtr:6",
+  "esid":"dcmtr_testharness:9:6",
+  "parent":160,
+  "children":[
+  ],
+  "name":"measurrement",
+  "fullname":"dcmtr_testharness/DC Motor (dcmtr)/measurrement",
+  "label":"measurrement",
+  "className":"Simulink.SubSystem",
+  "icon":"SubSystemIcon_icon",
+  "svg":"support/slwebview_files/dcmtr_6_d.svg",
+  "thumbnail":"support/slwebview_files/dcmtr_6_d.png",
+  "elements":[
+   {
+    "sid":"dcmtr_testharness:9:7",
+    "rsid":"dcmtr:7",
+    "name":"Ideal Rotational\nMotion Sensor",
+    "label":"Ideal Rotational Motion Sensor",
+    "className":"Simulink.SimscapeBlock",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:8",
+    "rsid":"dcmtr:8",
+    "name":"Mechanical\nRotational Reference",
+    "label":"Mechanical Rotational Reference",
+    "className":"Simulink.SimscapeBlock",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:9",
+    "rsid":"dcmtr:9",
+    "name":"PS-Simulink\nConverter 1",
+    "label":"PS-Simulink Converter 1",
+    "className":"PS-Simulink\nConverter",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:11",
+    "rsid":"dcmtr:11",
+    "name":"R",
+    "label":"R",
+    "className":"Simulink.PMIOPort",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:12",
+    "rsid":"dcmtr:12",
+    "name":"angle",
+    "label":"angle",
+    "className":"Simulink.Outport",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:8#lconn:1;line",
+    "rsid":"dcmtr:8#lconn:1;line",
+    "name":"",
+    "label":"",
+    "className":"Simulink.Line",
+    "icon":"LineIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:7#lconn:1;line",
+    "rsid":"dcmtr:7#lconn:1;line",
+    "name":"",
+    "label":"",
+    "className":"Simulink.Line",
+    "icon":"LineIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:9#lconn:1;line",
+    "rsid":"dcmtr:9#lconn:1;line",
+    "name":"",
+    "label":"",
+    "className":"Simulink.Line",
+    "icon":"LineIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9:9#out:1;line",
+    "rsid":"dcmtr:9#out:1;line",
+    "name":"",
+    "label":"",
+    "className":"Simulink.Line",
+    "icon":"LineIcon_icon"
+   }
+  ],
+  "sysViewURL":"support/slwebview_files/dcmtr_6_d.json",
+  "sameAsElement":false
+ }
+]

@@ -1,0 +1,169 @@
+[
+ {
+  "hid":1,
+  "sid":"dcmtr_testharness",
+  "rsid":"dcmtr_testharness",
+  "esid":"",
+  "parent":0,
+  "children":[
+   2,
+   160,
+   162
+  ],
+  "name":"dcmtr_testharness",
+  "fullname":"dcmtr_testharness",
+  "label":"dcmtr_testharness",
+  "className":"Simulink.BlockDiagram",
+  "icon":"SimulinkModelIcon_icon",
+  "svg":"support/slwebview_files/dcmtr_testharness_d.svg",
+  "thumbnail":"support/slwebview_files/dcmtr_testharness_d.png",
+  "elements":[
+   {
+    "sid":"dcmtr_testharness:52",
+    "rsid":"dcmtr_testharness:52",
+    "name":"Controller",
+    "label":"Controller (dcmtrCtrl_PID)",
+    "className":"Simulink.ModelReference",
+    "icon":"MdlRefBlockIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9",
+    "rsid":"dcmtr_testharness:9",
+    "name":"DC Motor",
+    "label":"DC Motor",
+    "className":"Simulink.SubSystem",
+    "icon":"SubSystemIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:53",
+    "rsid":"dcmtr_testharness:53",
+    "name":"Data Type Conversion",
+    "label":"Data Type Conversion",
+    "className":"Simulink.DataTypeConversion",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:54",
+    "rsid":"dcmtr_testharness:54",
+    "name":"Data Type Conversion1",
+    "label":"Data Type Conversion1",
+    "className":"Simulink.DataTypeConversion",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:7",
+    "rsid":"dcmtr_testharness:7",
+    "name":"Power Amplifier",
+    "label":"Power Amplifier",
+    "className":"Simulink.SubSystem",
+    "icon":"SubSystemIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:36",
+    "rsid":"dcmtr_testharness:36",
+    "name":"Signal Editor",
+    "label":"Signal Editor",
+    "className":"SignalEditor",
+    "icon":"BlockIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:58",
+    "rsid":"dcmtr_testharness:58",
+    "name":"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body align=\"left\" style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n<p align=\"left\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10px;\">Tuned controller included as a </span><a href=\"https://www.mathworks.com/videos/modular-design-using-model-referencing-68919.html\"><span style=\" font-size:10px; text-decoration: underline; color:#0000ff;\">Referenced Model</span></a></p></body></html>",
+    "label":"Tuned controller included as a Referenced Model",
+    "className":"Simulink.Annotation",
+    "icon":"annotation_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:57",
+    "rsid":"dcmtr_testharness:57",
+    "name":"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body align=\"left\" style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:16px; font-weight:600;\">Position Control of a DC Motor</span></p></body></html>",
+    "label":"Position Control of a DC Motor",
+    "className":"Simulink.Annotation",
+    "icon":"annotation_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:56",
+    "rsid":"dcmtr_testharness:56",
+    "name":"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body align=\"left\" style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n<p align=\"left\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10px;\">Motor Parameters have been loaded into MATLAB workspace</span></p></body></html>",
+    "label":"Motor Parameters have been loaded into MATLAB workspace",
+    "className":"Simulink.Annotation",
+    "icon":"annotation_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:46",
+    "rsid":"dcmtr_testharness:46",
+    "name":"Plant Model",
+    "label":"Plant Model",
+    "className":"Simulink.Annotation",
+    "icon":"annotation_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:55",
+    "rsid":"dcmtr_testharness:55",
+    "name":"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body align=\"left\" style=\" font-family:'Helvetica'; font-size:10px; font-weight:400; font-style:normal;\">\n<p align=\"left\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:11px; font-weight:600;\">Done testing your controller via simulations?</span></p>\n<p align=\"left\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:10px;\">Open up the &quot;Controller&quot; as a top level model and generate code from it using the Embedded Coder App</span><span style=\" font-size:10px; font-weight:600;\">.</span></p></body></html>",
+    "label":"Done testing your controller via simulations?\nOpen up the \"Controller\" as a top level model and generate code from it using the Embedded Coder App.",
+    "className":"Simulink.Annotation",
+    "icon":"annotation_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:9#out:1;line",
+    "rsid":"dcmtr_testharness:9#out:1;line",
+    "name":"angle",
+    "label":"angle",
+    "className":"Simulink.Line",
+    "icon":"LineIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:7#rconn:1;line",
+    "rsid":"dcmtr_testharness:7#rconn:1;line",
+    "name":"",
+    "label":"",
+    "className":"Simulink.Line",
+    "icon":"LineIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:7#rconn:2;line",
+    "rsid":"dcmtr_testharness:7#rconn:2;line",
+    "name":"",
+    "label":"",
+    "className":"Simulink.Line",
+    "icon":"LineIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:36#out:1;line",
+    "rsid":"dcmtr_testharness:36#out:1;line",
+    "name":"ref",
+    "label":"ref",
+    "className":"Simulink.Line",
+    "icon":"LineIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:52#out:1;line",
+    "rsid":"dcmtr_testharness:52#out:1;line",
+    "name":"v_in",
+    "label":"v_in",
+    "className":"Simulink.Line",
+    "icon":"LineIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:53#out:1;line",
+    "rsid":"dcmtr_testharness:53#out:1;line",
+    "name":"",
+    "label":"",
+    "className":"Simulink.Line",
+    "icon":"LineIcon_icon"
+   },
+   {
+    "sid":"dcmtr_testharness:54#out:1;line",
+    "rsid":"dcmtr_testharness:54#out:1;line",
+    "name":"",
+    "label":"",
+    "className":"Simulink.Line",
+    "icon":"LineIcon_icon"
+   }
+  ],
+  "sysViewURL":"support/slwebview_files/dcmtr_testharness_d.json",
+  "sameAsElement":false
+ }
+]

@@ -1,0 +1,19 @@
+.SimulinkModelIcon_icon,
+.MdlRefBlockIcon_icon,
+.SubSystemIcon_icon,
+.BlockIcon_icon,
+.annotation_icon,
+.LineIcon_icon,
+.SubsystemReference_16_icon {
+    background:url('icon.png') no-repeat top left;
+    width:16px; 
+    height:16px; 
+}
+
+.SimulinkModelIcon_icon { background-position: -0px; }
+.MdlRefBlockIcon_icon { background-position: -16px; }
+.SubSystemIcon_icon { background-position: -32px; }
+.BlockIcon_icon { background-position: -48px; }
+.annotation_icon { background-position: -64px; }
+.LineIcon_icon { background-position: -80px; }
+.SubsystemReference_16_icon { background-position: -96px; }
