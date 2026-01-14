@@ -186,8 +186,6 @@ jobs:
             Simulink
             Stateflow
             Control_System_Toolbox
-            MATLAB_Coder
-            Simulink_Coder
             Embedded_Coder
             Simulink_Check
             Simulink_Coverage
