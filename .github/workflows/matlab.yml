@@ -81,28 +81,28 @@ jobs:
             derived/artifacts.dmr
 
 
-      # - name:
-      #     Upload Artifacts
-      # 
-      #   if:
-      #     ${{ !cancelled() }}
-      # 
-      #   uses:
-      #     actions/upload-artifact@v4
-      # 
-      #   with:
-      #     name:
-      #       Restore_Cache_padv_artifacts
-      # 
-      #     path:
-      #       |
-      #       derived/artifacts.dmr
-      #       PA_Results/dcmtrCtrl_PID/webview
-      #       PA_Results/dcmtr_testharness/webview
-      #       PA_Results/test_results
-      # 
-      #     retention-days:
-      #       30
+      - name:
+          Upload Artifacts
+
+        if:
+          ${{ !cancelled() }}
+
+        uses:
+          actions/upload-artifact@v4
+
+        with:
+          name:
+            Restore_Cache_padv_artifacts
+
+          path:
+            |
+            derived/artifacts.dmr
+            PA_Results/dcmtrCtrl_PID/webview
+            PA_Results/dcmtr_testharness/webview
+            PA_Results/test_results
+
+          retention-days:
+            30
 
 
   Runprocess:
@@ -122,17 +122,28 @@ jobs:
         uses:
           actions/checkout@v4
 
-      # - name:
-      #     Download Artifacts
-      # 
-      #   uses:
-      #     actions/download-artifact@v4
-      # 
-      #   with:
-      #     name:
-      #       Restore_Cache_padv_artifacts
+      - name:
+          Download Artifacts
+
+        uses:
+          actions/download-artifact@v4
+
+        with:
+          name:
+            Restore_Cache_padv_artifacts
 
       - uses: matlab-actions/setup-matlab@v2
+
+      - name: Debug MLM_LICENSE_TOKEN
+        run: |
+          if [ -z "$MLM_LICENSE_TOKEN" ]; then
+            echo "MLM_LICENSE_TOKEN is not set!"
+            exit 1
+          else
+            echo "MLM_LICENSE_TOKEN is set, length: ${#MLM_LICENSE_TOKEN}"
+            echo "${MLM_LICENSE_TOKEN:0:5}*****"
+          fi
+
       - name:
           Launch MATLAB
 
