@@ -133,12 +133,6 @@ jobs:
 
 
       - name:
-          Setup MATLAB
-
-        run:
-          echo "$PATH_TO_MATLAB" >> $GITHUB_PATH
-
-      - name:
           Launch MATLAB
 
         run:
