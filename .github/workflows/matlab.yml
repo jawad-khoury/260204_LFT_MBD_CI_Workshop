@@ -49,6 +49,7 @@ jobs:
             CI/CD_Automation_for_Simulink_Check
 
   Restore_Cache:
+    needs: build
     runs-on:
       ubuntu-latest
 
