@@ -195,7 +195,7 @@ jobs:
           >
           matlab-batch 
           -logfile output.log 
-          "!whoami, ls(fullfile(matlabshared.supportpkg.getSupportPackageRoot, 'toolbox')), openProject(pwd);
+          "ls(fullfile(matlabshared.supportpkg.getSupportPackageRoot, 'toolbox')), openProject(pwd);
           rptObj=padv.ProcessAdvisorReportGenerator(Process = 'CIPipeline', Format='pdf', OutputPath=fullfile(currentProject().RootFolder,'ProcessAdvisorReport'));
           rptObj.generateReport();" 
 
