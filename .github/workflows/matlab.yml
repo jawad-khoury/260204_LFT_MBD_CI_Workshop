@@ -84,6 +84,14 @@ jobs:
         with:
           name: Restore_Cache_padv_artifacts
 
+      - name: Start virtual display server (for webview)
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get install -y xvfb
+          Xvfb :99 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
+
+
         # Set up MATLAB and other MathWorks products on the runner.
       - name: Set up MATLAB
         uses: matlab-actions/setup-matlab@v2
@@ -187,7 +195,7 @@ jobs:
           >
           matlab-batch 
           -logfile output.log 
-          "openProject(pwd);
+          "!whoami, ls(fullfile(matlabshared.supportpkg.getSupportPackageRoot, 'toolbox')), openProject(pwd);
           rptObj=padv.ProcessAdvisorReportGenerator(Process = 'CIPipeline', Format='pdf', OutputPath=fullfile(currentProject().RootFolder,'ProcessAdvisorReport'));
           rptObj.generateReport();" 
 
